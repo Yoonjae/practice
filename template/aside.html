@@ -1,0 +1,31 @@
+<ul class="vb-nav">
+    <% _.each(menu.list, function(item){ %>
+    <% if(item.key == menu.key ) {%>
+        <li class="vb-nav-item vb-active">
+    <%} else {%>
+        <li class="vb-nav-item">
+    <% } %>
+
+    <% if( item.url ) {%>
+        <a class="vb-nav-item-bar block clearfix" href="<%- item.url %>">
+    <%} else {%>
+        <a class="vb-nav-item-bar block clearfix" href="javascript:;">
+    <% } %>
+            <span class="pull-left"><%- item.title %></span>
+        </a>
+        <% if(item.subList && item.subList.length > 0) {%>
+        <ul class="vb-sub-nav">
+            <% _.each(item.subList, function(subItem){ %>
+            <% if(subItem.sub_key == menu.sub_key ) {%>
+            <li class="vb-sub-nav-item vb-current">
+                <%} else {%>
+            <li class="vb-sub-nav-item">
+                <% } %>
+                <a href="<%- subItem.url %>"><%- subItem.title %></a>
+            </li>
+            <% }) %>
+        </ul>
+        <% } %>
+    </li>
+    <% }) %>
+</ul>

@@ -1,0 +1,25 @@
+.toptitle {
+  color: rebeccapurple;
+  font-size: 14px;
+  text-align: center; }
+
+#bgimage {
+  text-align: center; }
+
+.item {
+  display: inline-block; }
+  .item .textContent {
+    color: #00a2d4;
+    font-size: 15px;
+    padding: 10px; }
+
+.label {
+  font-size: 12px;
+  min-width: 19px;
+  height: 19px;
+  border-radius: 100%;
+  background-color: #c3325f;
+  color: white;
+  text-align: center;
+  line-height: 19px;
+  float: left; }

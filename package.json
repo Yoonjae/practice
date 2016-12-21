@@ -1,0 +1,27 @@
+{
+  "name": "yujian",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "clean-webpack-plugin": "^0.1.14",
+    "css-loader": "^0.26.1",
+    "expose": "^0.1.4",
+    "expose-loader": "^0.7.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
+    "jquery": "^3.1.1",
+    "lodash": "^4.17.2",
+    "node-sass": "^4.0.0",
+    "sass-loader": "^4.1.0",
+    "style-loader": "^0.13.1",
+    "underscore": "^1.8.3",
+    "underscore-template-loader": "^0.7.3",
+    "webpack": "^1.14.0"
+  }
+}

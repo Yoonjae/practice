@@ -1,29 +1,195 @@
-@charset "utf-8";
+body{
+  margin: 0px;
+  padding: 0px;
+  //min-height: 500px;
+  max-height: 500px;
+  min-width: 600px;
+}
+.head{
+  height: 45px;
+  width: 100%;
+  color: #999;
+  .topright{
+    //background-color: inherit;
+    float: right;
+    margin-top: 20px;
+    //line-height: 50px;
+    .mnav{
+      float: left;
+      font-size: 13px;
+      line-height: 24px;
+      color: #333;
+      padding-left: 15px;
+      font-weight: 700;
+      text-decoration: underline;
+    }
+    .moreinfo{
+      padding:6px;
+      background-color: #38f;
+      width: 60px;
+      height: 23px;
+      line-height: 24px;
+      font-size: 13px;
+      color:#fff;
+      margin-left: 20px;
+      margin-right: 10px;
+      text-decoration: none;
 
-.toptitle{
-  color: rebeccapurple;
-  font-size: 14px;
-  text-align: center;
+    }
+  }
+
 }
-#bgimage{
+.hideright{
+  display: none;
+  //opacity: 0.5;
+  min-height: 550px;
+  width: 84px;
+  height:100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #f9f9f9;
+  z-index: 1;
   text-align: center;
-}
-.item{
-  display: inline-block;
-  .textContent{
-    color: #00a2d4;
-    font-size: 15px;
-    padding: 10px;
+  border-left: 1px solid #e7e7e7;
+  cursor: default;
+  overflow: hidden;
+
+  .morelabel{
+    width: 74px;
+    height: 30px;
+    margin: 20px auto 0px;
+    background-color: inherit;
+    border-bottom: 1px solid #e7e7e7;
+    .more_detail{
+      margin: 0 auto;
+      padding: 0px 2px;
+      text-align: center;
+      //background-color: white;
+      width: 60px;
+      height: 24px;
+      line-height: 24px;
+      font-size: 13px;
+      color:#333;
+      text-decoration: none;
+    }
+  }
+  .more_info{
+    width: 74px;
+    height: 60px;
+    margin:0px auto 0px;
+    border-bottom: 1px solid #e7e7e7;
+    text-align: center;
+
+    .yinyue{
+      width: 40px;
+      height: 36px;
+      display: block;
+      margin:0 auto 5px;
+    }
   }
 }
-.label{
-  font-size: 12px;
-  min-width: 19px;
-  height: 19px;
-  border-radius: 100%;
-  background-color: #c3325f;
-  color: white;
+
+
+.content {
+  background-color: inherit;
+  min-width: 800px;
+  width: 100%;
   text-align: center;
-  line-height: 19px;
-  float: left;
+
+  .center{
+    text-align: center;
+    width: 650px;
+    margin:0 auto;
+
+    .bigsearch{
+      float: left;
+      background-color: white;
+      //display: inline-block;
+      width: 540px;
+      height: 36px;
+      border: 1px solid lightgray;
+
+      .searchinput{
+        height: 22px;
+        margin:7px 10px 7px;
+        padding: 0px;
+        border: 0px;
+        width: 520px;
+        background: transparent;
+        outline:0px;
+      }
+    }
+    .submit{
+      float: left;
+      //display: inline-block;
+      height: 38px;
+      width: 100px;
+      padding: 10px;
+      background-color: rgb(48,111,210);
+      font-size: 15px;
+      color: #fff;
+      border: 0px;
+    }
+  }
+}
+.footer{
+  width:100%;
+  height: 200px;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  font: 10px arial;
+  .QR-code{
+    p{
+      font: 12px arial;
+      margin: 0;
+      color: #666;
+    }
+  }
+  .setting{
+    margin-top: 20px;
+    a{
+      color: #999;
+      margin-left: 20px;
+    }
+  }
+  .copyright{
+    color: #999;
+    a{
+      color: #999;
+      display: inline-block;
+    }
+    p{
+      list-style: none;
+    }
+    .first_logo,.second_logo{
+      width: 14px;
+      height: 17px;
+      display: inline-block;
+      background: url("https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/img/icons_5859e57.png") no-repeat;
+    }
+    .first_logo{
+      background-position: -600px -96px;
+      position: relative;
+      top: 3px;
+    }
+    .second_logo{
+      background-position: -623px -96px;
+      position: relative;
+      top: 3px;
+    }
+  }
+}
+@media screen and (min-height: 400px){
+  .content{
+    position: absolute;
+    top:12.5%;
+  }
+}
+@media screen and (max-height: 500px){
+  .footer{
+    top: 300px;
+  }
 }
